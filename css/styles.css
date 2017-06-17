@@ -27,22 +27,19 @@ nav {
     justify-content: center;
 }
 
-.material-icons.md-64 { 
-    font-size: 64px; 
-}
-
-#icon {
-    margin:0 auto;
-}
-
-.hamburger-menu {
-    height:100px;
+.material-icons.md-128 { 
+    font-size: 128px; 
 }
 
 .nav-text {
     background-color:yellow;
 
     flex:3;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right:20px;
+    font-size:64px;
 }
 
 
