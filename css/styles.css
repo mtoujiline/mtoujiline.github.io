@@ -15,8 +15,52 @@ nav {
     background-color:orange;
 
     flex:1;
-
+    display:flex;
 }
+
+.nav-icon {
+    background-color:purple;
+    
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-icons.md-64 { 
+    font-size: 64px; 
+}
+
+#icon {
+    margin:0 auto;
+}
+
+.hamburger-menu {
+    height:100px;
+}
+
+.nav-text {
+    background-color:yellow;
+
+    flex:3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .profile {
     background-color: red;
