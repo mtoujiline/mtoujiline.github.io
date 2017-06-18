@@ -3,13 +3,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-        <meta http-equiv="Pragma" content="no-cache" />
-        <meta http-equiv="Expires" content="0" />
 
         <title>Mark Toujiline Personal Page</title>
         <meta name="author" content="MarkToujiline">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+          
+
 
         <link rel="stylesheet" href="css/styles.css?v=1.0">
 
@@ -23,46 +30,172 @@
             <nav>
                 <!-- TODO: fix hamburger menu -->
                 <div class="nav-icon">
-                    ☰
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div class="nav-text">
                     Mark Toujiline
                 </div>
             </nav>
-            <div class="profile">
+            <div class="profile section">
                 <img class="profile-image" src="assets/mark2.jpg">
             </div>
-            <div class="description">
-                <div class="description-card">
-                    I am a 5th year Computer Science student
-                    at Cal Poly - San Luis Obispo. I am a full
-                    stack developer with a focus on the back end.
-                    In addition, I am comfortable with Android
-                    development. I have also worked with data
-                    science.
-                
+            <div class="description section">
+                <div class="card-panel teal">
+                    <span class="white-text">
+                        I am a 5th year Computer Science student
+                        at Cal Poly - San Luis Obispo. I am a full
+                        stack developer with a focus on the back end.
+                        In addition, I am comfortable with Android
+                        development. I have also worked with data
+                        science.
+                    </span>
                 </div>
             </div>
-                
-            <div class="projects">
-                <div class="project">
+            <header> Projects </header>
+            <div class="projects section">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/yosemite_sunset.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Personal Website<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Source code</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Personal Website<i class="material-icons right">close</i></span>
+                        <p>
+                            Created a website for me to display my programming knowledge.
+                            Created using HTML, CSS, JavaScript. In addition, the material
+                            Library was used. Some important concepts that were implemented
+                            were responsive design with flexbox, web debugging using chrome
+                            inspection tools, mastery over css properties for layout and design,
+                            and git for version control.
+                        </p>
+                    </div>
                 </div>
-                <div class="project">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/yosemite_sunset.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Personal Website<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Source code</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Personal Website<i class="material-icons right">close</i></span>
+                        <p>
+                            Created a website for me to display my programming knowledge.
+                            Created using HTML, CSS, JavaScript. In addition, the material
+                            Library was used. Some important concepts that were implemented
+                            were responsive design with flexbox, web debugging using chrome
+                            inspection tools, mastery over css properties for layout and design,
+                            and git for version control.
+                        </p>
+                    </div>
                 </div>
-                <div class="project">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/yosemite_sunset.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Personal Website<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Source code</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Personal Website<i class="material-icons right">close</i></span>
+                        <p>
+                            Created a website for me to display my programming knowledge.
+                            Created using HTML, CSS, JavaScript. In addition, the material
+                            Library was used. Some important concepts that were implemented
+                            were responsive design with flexbox, web debugging using chrome
+                            inspection tools, mastery over css properties for layout and design,
+                            and git for version control.
+                        </p>
+                    </div>
                 </div>
-                <div class="project">
+            </div>
+            <header> Academics </header>
+            <div class="classes section">
+                <div class="card teal darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Systems Programming</span>
+                        <p>
+                            Covered C programming language basics, bash, UNIX, pipes, 
+                            performance tool Valgrind, and vim.    
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Notes</a>
+                        <a href="#">Projects</a>
+                    </div>
                 </div>
-                <div class="project">
-                </div>
-                <div class="project">
-                </div>
-                <div class="project">
-                </div>
-                <div class="project">
-                </div>
-                <div class="project">
-                </div>
+                <div class="card teal darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Dynamic Web Development</span>
+                        <p>
+                            Covered C programming language basics, bash, UNIX, pipes, 
+                            performance tool Valgrind, and vim.    
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Notes</a>
+                        <a href="#">Projects</a>
+                    </div>
+                </div>  
+                <div class="card teal darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Introduction to Databases</span>
+                        <p>
+                            Covered C programming language basics, bash, UNIX, pipes, 
+                            performance tool Valgrind, and vim.    
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Notes</a>
+                        <a href="#">Projects</a>
+                    </div>
+                </div>  
+                <div class="card teal darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Theory of Computation</span>
+                        <p>
+                            Covered C programming language basics, bash, UNIX, pipes, 
+                            performance tool Valgrind, and vim.    
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Notes</a>
+                        <a href="#">Projects</a>
+                    </div>
+                </div>  
+                <div class="card teal darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Design & Analysis of Algorithms</span>
+                        <p>
+                            Covered C programming language basics, bash, UNIX, pipes, 
+                            performance tool Valgrind, and vim.    
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Notes</a>
+                        <a href="#">Projects</a>
+                    </div>
+                </div>  
+                <div class="card teal darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Computer Organization</span>
+                        <p>
+                            Covered C programming language basics, bash, UNIX, pipes, 
+                            performance tool Valgrind, and vim.    
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Notes</a>
+                        <a href="#">Projects</a>
+                    </div>
+                </div>    
             </div>
             <footer>
             </footer>
