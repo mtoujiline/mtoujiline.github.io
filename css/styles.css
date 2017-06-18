@@ -5,8 +5,7 @@ html, body {
 
 .container {
     background-color:lavender;
-    
-    height:100%;
+    height:auto ;
     display:flex;
     flex-direction: column;
 }
@@ -26,10 +25,7 @@ nav {
     display:flex;
     align-items: center;
     justify-content: center;
-}
-
-.material-icons.md-128 { 
-    font-size: 128px; 
+    font-size:100px;
 }
 
 .nav-text {
@@ -47,57 +43,37 @@ nav {
 .profile {
     background-color: white;
 
-    min-height:600px;
+    min-height:400px;
     flex:3;
     display:flex;
     align-items: center;
     justify-content: center;
 
-}
-
-.profile-container {
-    display:flex;
-    flex-direction:column;
-    border: 5px solid black;
-    width:40%;
-    height:80%;
 }
 
 .profile-image {
-    flex:3;
-    background-color: white;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.profile-description {
-    flex:1;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: palegreen;
-    font-size:24px;
-}
-
-.demo-card-image.mdl-card {
-    height:400px;
-    width:400px;
-    background: url('../assets/mark2.jpg') center / cover;
+    height:350px;
+    width:350px;
+    
     border-radius:50%;
 }
 
-
-
-
-
-
-
-.description {
+.projects {
     background-color: green;
-
+    padding:30px;
     min-height:500px;
+    display:flex;
     flex:5;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.project {
+    min-width:200px;
+    max-height:200px;
+    min-height:200px;
+    margin:30px;
+    background-color:red;
 }
 
 footer {
