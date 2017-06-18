@@ -6,7 +6,7 @@ html, body {
 
 .container {
     min-height:100%;
-    width:100%;
+    min-width:100%;
     background-color:lavender;
     height:auto;
     display:flex;
@@ -185,10 +185,14 @@ nav {
 }
 
 .classes .card {
-    flex:1;
-    max-height:350px;
-    max-width:300px;
+    max-width:400px;
+    max-height:300px;
+    min-width:300px;
     margin:10px;
+}
+
+.classes .card-title {
+    height:70px;
 }
 
 footer {
