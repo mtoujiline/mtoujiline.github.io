@@ -13,7 +13,7 @@ html, body {
 
 nav {
     background-color:orange;
-
+    min-height:120px;
     flex:1;
     display:flex;
 }
@@ -21,6 +21,7 @@ nav {
 .nav-icon {
     background-color:purple;
     
+    max-width:150px;
     flex:1;
     display:flex;
     align-items: center;
@@ -33,7 +34,7 @@ nav {
 
 .nav-text {
     background-color:yellow;
-
+    
     flex:3;
     display:flex;
     align-items: center;
@@ -43,25 +44,10 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .profile {
-    background-color: red;
+    background-color: white;
 
+    min-height:600px;
     flex:3;
     display:flex;
     align-items: center;
@@ -91,18 +77,15 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: palegreen;
+    font-size:24px;
 }
 
-
-
-
-
-
-
-
-
-
-
+.demo-card-image.mdl-card {
+    height:400px;
+    width:400px;
+    background: url('../assets/mark2.jpg') center / cover;
+    border-radius:50%;
+}
 
 
 
@@ -113,11 +96,13 @@ nav {
 .description {
     background-color: green;
 
+    min-height:500px;
     flex:5;
 }
 
 footer {
     background-color: black;
 
+    min-height:100px;
     flex:1;
 }
