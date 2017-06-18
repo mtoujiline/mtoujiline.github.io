@@ -185,14 +185,17 @@ nav {
 }
 
 .classes .card {
-    max-width:400px;
-    max-height:300px;
-    min-width:300px;
+    max-width:500px;
     margin:10px;
 }
 
-.classes .card-title {
-    height:70px;
+.classes .card .card-content .card-title {
+    font-size:3em;
+    line-height:1em;
+}
+
+.classes .card-content p {
+    font-size:1.5em;
 }
 
 footer {
