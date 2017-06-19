@@ -24,45 +24,7 @@ header {
 }
 
 nav {
-    background-color:#000000;
-    opacity:0.8;
-    min-height:120px;
-    flex:1;
-    display:flex;
-}
-
-.nav-icon {
-    color:white;
-    max-width:150px;
-    flex:1;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-size:100px;
-    position:relative;
-    padding:20px;
-    
-}
-
-.nav-icon span{
-    display:block;
-    background-color:white;
-    width:60px;
-    max-height:5px;
-    flex:1;
-}
-
-.nav-icon span:nth-child(1) {
-  top: 0px;
-}
-
-.nav-icon span:nth-child(2) {
-  top: 18px;
-}
-
-.nav-icon span:nth-child(3) {
-  top: 36px;
+   
 }
 
 
@@ -78,7 +40,7 @@ nav {
 
 
 .profile {
-    min-height:400px;
+    min-height:500px;
     flex:3;
     display:flex;
     align-items: center;
@@ -88,7 +50,7 @@ nav {
 }
 
 .profile-image {
-    transition-duration:0.5s;
+    transition-duration:0.3s;
     height:300px;
     width:300px;
     
@@ -192,6 +154,7 @@ nav {
 .classes .card .card-content .card-title {
     font-size:3em;
     line-height:1em;
+    min-height:90px;
 }
 
 .classes .card-content p {
