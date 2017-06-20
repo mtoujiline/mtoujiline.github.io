@@ -1,12 +1,56 @@
-html, body {
-    margin:0;
-    width:100%;
+.mdl-layout {
+
 }
 
-.box {
+.mdl-grid {
+    min-height:500px;
+}
+
+.section-text {
+    color:black;
+
+}
+
+.hero {
+    min-height:500px;
     border: 1px solid black;
+    background-color:white;
+    background: url('../assets/yosemite-hero.jpg') center / cover;   
 }
 
-.section-margin {
-    padding:40px;   
+.hero-text {
+    color:white;
+    text-align: center;
+}
+
+.demo-card-square.mdl-card {
+  width: 250px;
+  height: 300px;
+}
+.demo-card-square > .mdl-card__image {
+  color: #fff;
+  min-height:200px;
+  background:
+    url('../assets/yosemite_sunset.jpg') center / cover;
+}
+
+.mdl-card__media > img {
+  max-width: 100%;
+}
+
+.center {
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.center-text {
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+.projects {
+    background-color:#b9f6ca
 }
