@@ -1,56 +1,59 @@
-.mdl-layout {
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+@import url('http://fonts.googleapis.com/css?family=Oswald');
 
+/* Reset style */
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
 }
 
-.mdl-grid {
-    min-height:500px;
+nav {
+    position:fixed;
+    top:0; /* Fixed to top of page */;
+    width:100%; /* Required because fixed position */
+    height:calc(40px + 5vh);
+    background-color:red;
 }
 
-.section-text {
-    color:black;
-
+.intro {
+    height:100%;
+    width:auto;
+    padding:0px 30px;
+    display:flex;
+    top:0;
+    background: 
+        linear-gradient(rgba(36, 70, 105, 0.74), rgba(36, 70, 105, 0.74)),
+        url("../assets/yosemite-hero.jpg") no-repeat 50% 50%;
+    background-size:cover;
+    flex-direction: column;
 }
 
-.hero {
-    min-height:500px;
-    border: 1px solid black;
-    background-color:white;
-    background: url('../assets/yosemite-hero.jpg') center / cover;   
+.intro .inner {
+    /* Center horizontally and vertically */
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.hero-text {
+.content h1 {
+    font-family: 'Roboto';
+    font-weight: 100;
+    color: #F9F3F4;
+    font-size:calc(40px + 2vw); /* Hack to make min font-size 40px */
+}
+
+.content .btn {
+    border-radius: 9px;
+    padding: 10px 20px;
+    border: solid 3px white;
+    text-transform: uppercase;
+    text-decoration: none;
     color:white;
-    text-align: center;
+    font-family:'Oswald';
 }
 
-.demo-card-square.mdl-card {
-  width: 250px;
-  height: 300px;
-}
-.demo-card-square > .mdl-card__image {
-  color: #fff;
-  min-height:200px;
-  background:
-    url('../assets/yosemite_sunset.jpg') center / cover;
-}
-
-.mdl-card__media > img {
-  max-width: 100%;
-}
-
-.center {
-    display:flex;
-    justify-content: center; 
-    align-items: center;
-}
-
-.center-text {
-    display:flex;
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-}
-
-.projects {
-    background-color:#b9f6ca
-}
