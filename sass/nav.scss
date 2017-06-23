@@ -1,0 +1,145 @@
+/* ===== Navigation ===== */
+nav {
+    position: fixed;
+    top: 0;
+    height: $nav-height;
+    width: 100%;
+    z-index: 1;
+    
+    color: white;
+    background-color: $nav-color;
+    
+}
+
+.nav-icon-container {
+    position: relative;
+    height: 100%;
+    width: 80px;
+    
+    z-index: 3; /* Above navbar AND side-nav */
+    @include center();
+}
+
+#nav-icon {
+    position: relative; /* Needed to for #nav-icon3 span to be positioned */
+    height: 20px;
+    width: 30px;
+
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* Disable blue color on tap for mobile */
+}
+
+#nav-icon span {
+    position: absolute; /* positioned relative to first positioned parent */
+    height: 1px;
+    width: 100%;
+    left: 0;
+    
+    display: block; /* Force span to take up */
+    background: white;
+    @include rotate(0deg);
+    @include ease-in-out(0.25s);
+}
+
+#nav-icon span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+    top: 50%;
+}
+
+#nav-icon span:nth-child(4) {
+    bottom: 0%;
+}
+
+#nav-icon.open span {
+    background-color: black;
+}
+
+#nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+    @include rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+    @include rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.side-nav {
+    position:absolute;
+    top: 0;
+    height: 100vh;
+    width: $side-nav-width;
+    
+    display: flex;
+    flex-direction: column;
+    z-index: 2; /* Above navbar, but under menu button */
+    
+    background-color: white;
+    @include ease-in-out(0.25s);
+}
+
+.side-nav-closed {
+    left: -100vw;   
+}
+
+.side-nav-open {
+    left: 0vw;
+}
+
+.side-nav-tab-container {
+    margin: 100px 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav-tab {
+    
+    height: 100%;
+    @include center();
+    color: black;
+    font-size: 30px;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    position: relative;
+}
+
+.side-nav-tab:after {
+    content: '';
+    width: 60%;
+    border-bottom: solid 1px black;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    z-index: 1;
+}
+
+.side-nav-tab-container a {
+    flex: 1;
+    text-decoration: none;
+    display: block;
+}
+
+.side-nav-tab:hover {
+    background-color: #eeeeee;
+}
+
+.side-nav-tab:nth-child(4) {
+    border: none;
+}
