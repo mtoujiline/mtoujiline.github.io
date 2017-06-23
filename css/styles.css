@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Roboto');
+@import url('http://fonts.googleapis.com/css?family=Roboto:300');
 @import url('http://fonts.googleapis.com/css?family=Raleway');
 @import url('http://fonts.googleapis.com/css?family=Oswald');
 
@@ -18,6 +18,21 @@ nav {
     background-color:rgba(0, 0, 0, 0.8);
     color:white;
 }
+
+.icon-container{
+    margin-left:10px;
+    width:100px;
+    height:100%;
+    position:relative;
+}
+
+.icon-container-container {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .intro {
     height:100%;
@@ -43,7 +58,7 @@ nav {
 
 .content h1 {
     font-family: 'Roboto';
-    font-weight: 100;
+    font-weight: 300;
     color: #F9F3F4;
     font-size:calc(40px + 2vw); /* Hack to make min font-size 40px */
 }
@@ -84,7 +99,7 @@ nav {
   flex: 1.5;
   padding:30px 50px;
   font-family: 'Roboto';
-  font-weight: 100;
+  font-weight: 300;
   color: black;
   font-size:calc(20px + 0.5vw); /* Hack to make min font-size 40px */
   display: flex;
@@ -115,7 +130,7 @@ nav {
 .projects {
     
     min-height:90%;
-    background-color: #0043ca;
+    background-color: #424242;
 }
 
 .projects-container {
@@ -133,7 +148,7 @@ display:flex;
     justify-content: center;
     text-align: center;
     font-family: 'Roboto';
-    font-weight: 100;
+    font-weight: 300;
     font-size: 30px;
 }
 
@@ -145,9 +160,9 @@ display:flex;
 
 .project {
     flex: 2;
-    height:calc(250px + 2vw);
-    min-width:calc(250px + 2vw);
-    max-width:calc(250px + 2vw);
+    height:calc(300px + 2vw);
+    min-width:calc(270px + 1.5vw);
+    max-width:calc(270px + 1.5vw);
     margin:auto;
     margin-top:30px;
     border-radius:2dp;
@@ -194,14 +209,14 @@ display:flex;
     color: #f57f17;
     text-align:right;
     padding: 10px 20px;
-    flex:1;
+    flex:.5;
 }
 
 .project-one {
     background-color:#3d5afe;
 }
 
-.project-two {
+/*.project-two {
     background-color:#00796b;
 }
 
@@ -215,7 +230,7 @@ display:flex;
 
 .project-five {
     background-color:#6d4c41;
-}
+}*/
 /* Classes Section*/
 .classes {
 
@@ -225,3 +240,83 @@ display:flex;
 .skills {
 
 }
+
+/* Nav icon */
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background:white;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+
+
+
+
+
