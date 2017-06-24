@@ -187,7 +187,8 @@ body {
 .about {
   min-height: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 100px; }
   .about h1 {
     flex: 1;
     font-weight: 300;
@@ -227,13 +228,13 @@ body {
 /* Projects Section*/
 .projects {
   min-height: 100%;
-  background-color: #69F0AE;
+  background-color: #00C853;
   display: flex;
   flex-direction: column;
   padding-bottom: 100px; }
   .projects h1 {
     flex: 1;
-    color: black;
+    color: white;
     font-weight: 300;
     font-size: 60px;
     display: flex;

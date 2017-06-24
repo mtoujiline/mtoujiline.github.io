@@ -15,7 +15,6 @@ body {
 
 .intro {
     height: 100%;
-    
     background: 
         linear-gradient(rgba(36, 70, 105, 0.74), rgba(36, 70, 105, 0.74)), 
         url("../assets/yosemite-hero.jpg") no-repeat 50% 50%;
@@ -53,6 +52,7 @@ body {
     min-height: 100%;
     display:flex;
     flex-direction: column;
+    padding-bottom:100px;
     
     h1 {
         flex:1;
@@ -96,13 +96,13 @@ body {
 
 .projects {
     min-height: 100%;
-    background-color: #69F0AE;
+    background-color: #00C853;
     display:flex;
     flex-direction: column;
     padding-bottom:100px;
     h1 {
         flex:1;
-        color:black;    
+        color:white;    
         font-weight:300;
         font-size:60px;
         @include center();
