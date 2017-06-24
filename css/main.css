@@ -227,12 +227,13 @@ body {
 /* Projects Section*/
 .projects {
   min-height: 100%;
-  background-color: #424242;
+  background-color: #69F0AE;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 100px; }
   .projects h1 {
     flex: 1;
-    color: white;
+    color: black;
     font-weight: 300;
     font-size: 60px;
     display: flex;
@@ -255,7 +256,8 @@ body {
       border-radius: 2dp;
       display: flex;
       flex-direction: column;
-      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+      /* Gives material design look */ }
       .projects .project-container .project .title {
         height: 200px;
         font-size: 30px;
@@ -295,6 +297,62 @@ body {
       background-color: #6d4c41; }
 
 /* Classes Section*/
+.classes {
+  min-height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; }
+  .classes h1 {
+    flex: 1;
+    color: black;
+    font-weight: 300;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .classes P {
+    flex: 1;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px; }
+  .classes .tile-container {
+    display: flex;
+    flex: 10;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; }
+    .classes .tile-container .tile {
+      flex: 1 0 350px;
+      align-self: stretch;
+      max-width: 100%;
+      min-height: 10rem;
+      margin: 10px;
+      background: white;
+      color: white;
+      font-size: 2.5rem;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .classes .tile-container .tile:nth-child(2n+3) {
+        flex-basis: 300px; }
+      .classes .tile-container .tile:nth-child(4n+5) {
+        flex-basis: 450px; }
+      .classes .tile-container .tile:nth-child(4n + 1) {
+        background-color: #008744; }
+      .classes .tile-container .tile:nth-child(4n + 2) {
+        background-color: #0057e7; }
+      .classes .tile-container .tile:nth-child(4n + 3) {
+        background-color: #d62d20; }
+      .classes .tile-container .tile:nth-child(4n + 4) {
+        background-color: #ffa700; }
+    @media screen and (max-width: 500px) {
+      .classes .tile-container .tile {
+        flex-basis: 100% !important;
+        max-width: 90%; } }
+
 /* Skills Section*/
 
 /*# sourceMappingURL=main.css.map */

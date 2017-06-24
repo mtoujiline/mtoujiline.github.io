@@ -22,7 +22,10 @@ $(document).ready(function () {
 /* Remove side menu on scroll */
 $(document).on('scroll', function () {
     x = x + 1;
-    if (x > 30) {
+    
+    var height = $(window).scrollTop();
+    var bottom = $(window).scrollTop() + $(window).height() == $(document).height()
+    if (x > 30 || height==0 || bottom) {
         $("#nav-icon").removeClass('open');
         $(".side-nav-closed").removeClass('side-nav-open');
         x = 0;

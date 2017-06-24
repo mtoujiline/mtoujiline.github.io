@@ -96,13 +96,13 @@ body {
 
 .projects {
     min-height: 100%;
-    background-color: #424242;
+    background-color: #69F0AE;
     display:flex;
     flex-direction: column;
-    
+    padding-bottom:100px;
     h1 {
         flex:1;
-        color:white;    
+        color:black;    
         font-weight:300;
         font-size:60px;
         @include center();
@@ -125,7 +125,7 @@ body {
             border-radius: 2dp;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22); /* Gives material design look */
             
             .title {
                 height: 200px;
@@ -176,9 +176,80 @@ body {
 
 /* Classes Section*/
 
-.classes {}
+.classes {
+    min-height: 100%;
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    
+    h1 {
+        flex:1;
+        color:black;    
+        font-weight:300;
+        font-size:60px;
+        @include center();
+    }
+    P {
+        flex:1;
+        color:white;
+        font-size:20px;
+        margin-left: 20px;
+    }
+    
+    .tile-container{
+        display:flex;
+        flex:10;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: stretch;
 
+        .tile{
+            flex:1 0 350px;
+            align-self:stretch;
+            max-width:100%;
+            min-height: 10rem;
+            margin:10px;
+            background:white;
+            color:white;
+            font-size:2.5rem;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+            @include center();
+
+            // Min width
+            &:nth-child(2n+3){
+                flex-basis:300px;
+            }
+            &:nth-child(4n+5){
+                flex-basis:450px;
+            }
+
+            &:nth-child(4n + 1) {
+                background-color:#008744;
+            }
+            &:nth-child(4n + 2) {
+                background-color:#0057e7;
+            }
+            &:nth-child(4n + 3) {
+                background-color:#d62d20;
+            }
+            &:nth-child(4n + 4) {
+                background-color:#ffa700;
+            }
+
+        }
+        @media screen and(max-width:500px){
+            .tile{
+                flex-basis:100% !important;
+                max-width:90%;
+            }
+        }
+    }
+}
 
 /* Skills Section*/
 
-.skills {}
+.skills {
+    
+    
+}
