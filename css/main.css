@@ -9,12 +9,43 @@ nav {
   width: 100%;
   z-index: 1;
   color: white;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex; }
+  nav .nav-links {
+    display: none; }
+  nav .nav-title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-right: 20px; }
+  @media (min-width: 1150px) {
+    nav .nav-links {
+      flex: 10;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      nav .nav-links a {
+        text-decoration: none;
+        color: white;
+        margin: 30px; }
+    nav .nav-icon-container {
+      display: none; }
+    nav .nav-title {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
 
 .nav-icon-container {
   position: relative;
   height: 100%;
   width: 80px;
+  max-width: 80px;
+  flex: 1;
   z-index: 3;
   /* Above navbar AND side-nav */
   display: flex;
@@ -207,12 +238,14 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center; }
+      text-align: center;
+      padding: 30px; }
       .about .content .img-container img {
-        height: calc(200px + 5vw);
+        height: calc(150px + 6vw);
         border-radius: 50%; }
     .about .content .text {
       font-weight: 300;
+      min-width: 400px;
       color: black;
       font-size: calc(20px + 0.5vw);
       flex: 2;
@@ -302,7 +335,8 @@ body {
   min-height: 100%;
   background-color: #ffffff;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 100px; }
   .classes h1 {
     flex: 1;
     color: black;
@@ -355,5 +389,45 @@ body {
         max-width: 90%; } }
 
 /* Skills Section*/
+footer {
+  min-height: 400px;
+  color: #9e9e9e;
+  background-color: #424242;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 50px; }
+  footer .footer-section {
+    min-width: 150px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; }
+    footer .footer-section h1 {
+      padding-top: 50px;
+      flex: 1;
+      width: 100%;
+      text-align: left; }
+    footer .footer-section a {
+      flex: 1;
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      text-align: left;
+      pointer-events: none;
+      cursor: default; }
+  footer .footer-section-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    text-align: center; }
+    footer .footer-section-bottom span {
+      margin: 0px 50px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,12 +8,50 @@ nav {
     
     color: white;
     background-color: $nav-color;
+    display:flex;
+    
+    .nav-links {
+        display:none;
+    }
+    .nav-title {
+        flex:1;
+        @include center();
+        justify-content: flex-end;
+        padding-right:20px;
+    }
+    
+    @media (min-width:1150px) {
+        .nav-links {
+            flex:10;
+            display:flex;
+            align-items: center;
+            justify-content: flex-end;
+            a {
+                text-decoration: none;
+                color:white;
+                margin:30px;
+            }
+        }
+        
+        .nav-icon-container {
+            display:none;
+        }
+        .nav-title {
+            flex:1;
+            @include center();
+        }
+    }
 }
+
+
+
 
 .nav-icon-container {
     position: relative;
     height: 100%;
     width: 80px;
+    max-width: 80px;
+    flex:1;
     
     z-index: 3; /* Above navbar AND side-nav */
     @include center();
