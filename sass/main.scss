@@ -8,6 +8,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family:'Roboto';
 }
 
 /* ===== Section: Intro ===== */
@@ -27,11 +28,9 @@ body {
         @include center();
 
         h1 {
-            font-family: 'Roboto';
             font-weight: 300;
             color: #F9F3F4;
-            font-size: calc(40px + 2vw);
-        /* Hack to make min font-size 40px */
+            font-size: calc(40px + 2vw); //* Hack to make min font-size 40px *
         }
 
         .btn {
@@ -57,7 +56,6 @@ body {
     
     h1 {
         flex:1;
-        font-family:'Roboto';
         font-weight:300;
         font-size:60px;
         @include center();
@@ -71,7 +69,6 @@ body {
         
         .img-container {
             flex:1;
-            min-width: 400px;
             @include center();
             img {
                 height: calc(200px + 5vw);
@@ -80,7 +77,6 @@ body {
         }
         
         .text {
-            font-family: 'Roboto';
             font-weight: 300;
             color: black;
             font-size: calc(20px + 0.5vw);
@@ -99,111 +95,84 @@ body {
 /* Projects Section*/
 
 .projects {
-    min-height: 90%;
+    min-height: 100%;
     background-color: #424242;
-}
-
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.section-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Roboto';
-    font-weight: 300;
-    font-size: 30px;
-    margin-top: 30px;
-}
-
-.projects a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.project {
-    flex: 2;
-    height: calc(300px + 2vw);
-    min-width: calc(270px + 1.5vw);
-    max-width: calc(270px + 1.5vw);
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 2dp;
-    display: flex;
+    display:flex;
     flex-direction: column;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    
+    h1 {
+        flex:1;
+        color:white;    
+        font-weight:300;
+        font-size:60px;
+        @include center();
+    }
+    
+    .project-container {
+        flex:7;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+        
+        .project {
+            flex: 2;
+            height: calc(300px + 2vw);
+            min-width: calc(270px + 1.5vw);
+            max-width: calc(270px + 1.5vw);
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 2dp;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+            
+            .title {
+                height: 200px;
+                font-size: 30px;
+                color: white;
+                @include center();  
+            }
+            
+            .desc {
+                flex:4;
+                padding:10px;
+                font-family: 'Roboto';
+                @include center();
+                background-color:white;
+            }  
+            
+            .link {
+                background-color: white;
+                color: #f57f17;
+                text-align: right;
+                padding: 10px 20px;
+                flex: .5;
+                
+                a {
+                    text-decoration: none;
+                    color: inherit;     
+                    display: block;
+                }
+            }
+        }
+        .one {
+            background-color: #3d5afe;
+        }
+        .two {
+            background-color:#00796b;
+        }
+        .three {
+            background-color:#5e35b1;
+        }
+        .four {
+            background-color:#f44336;
+        }
+        .five {
+            background-color:#6d4c41;
+        }
+    }
 }
-
-.project-title {
-    flex: 7;
-    height: 200px;
-    font-family: 'Roboto';
-    font-size: 30px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.project-desc-container {
-    display: flex;
-    flex: 3;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-}
-
-.project-desc {
-    font-family: 'Roboto';
-    height: 80%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.project-link {
-    background-color: white;
-    font-family: 'Roboto';
-    text-transform: uppercase;
-    color: #f57f17;
-    text-align: right;
-    padding: 10px 20px;
-    flex: .5;
-}
-
-.project-one {
-    background-color: #3d5afe;
-}
-
-
-/*.project-two {
-    background-color:#00796b;
-}
-
-.project-three {
-    background-color:#5e35b1;
-}
-
-.project-four {
-    background-color:#f44336;
-}
-
-.project-five {
-    background-color:#6d4c41;
-}*/
-
 
 /* Classes Section*/
 
