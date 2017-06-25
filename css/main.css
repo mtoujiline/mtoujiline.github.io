@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 /* ===== Navigation ===== */
 nav {
   position: fixed;
@@ -138,8 +141,8 @@ nav {
   left: 0vw; }
 
 .side-nav-tab-container {
-  padding: 50px 0px;
-  height: 50%;
+  padding-top: 100px;
+  height: 60%;
   display: flex;
   flex-direction: column;
   overflow: auto; }
