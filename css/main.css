@@ -246,7 +246,7 @@ body {
         border-radius: 50%; }
     .about .content .text {
       font-weight: 300;
-      min-width: 400px;
+      min-width: 300px;
       color: black;
       font-size: calc(20px + 0.5vw);
       flex: 2;
