@@ -141,41 +141,45 @@ nav {
 }
 
 .side-nav-tab-container {
-    padding-top: 100px;
-    height:60%;
+    padding-top: $nav-height;
+    height:80%;
     display: flex;
     flex-direction: column;
     overflow: auto;
+    
+    .side-nav-tab {
+        @include center();
+        color: black;
+        font-size: 4vh;
+        height:100%;
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        position: relative;
+    }
+    
+    .side-nav-tab:after {
+        content: '';
+        width: 60%;
+        border-bottom: solid 1px black;
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        z-index: 1;
+    }
+    
+    a {
+        flex: 1;
+        text-decoration: none;
+        display: block;
+    }
+    
 }
 
-.side-nav-tab {
-    @include center();
-    color: black;
-    height:100%;
-    min-height:50px;
-    font-size: 3em;
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-    position: relative;
-}
 
-.side-nav-tab:after {
-    content: '';
-    width: 60%;
-    border-bottom: solid 1px black;
-    position: absolute;
-    bottom: 0;
-    left: 20%;
-    z-index: 1;
-}
 
-.side-nav-tab-container a {
-    flex: 1;
-    text-decoration: none;
-    display: block;
-}
+.side-nav-tab-container 
 
 .side-nav-tab:hover {
     background-color: #eeeeee;

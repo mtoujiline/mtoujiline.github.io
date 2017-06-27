@@ -251,7 +251,57 @@ body {
     }
 }
 
-/* Skills Section*/
+/* Contact Section*/
+
+.contact {
+    background-color:#009688;
+    padding-top:20px;
+    padding-bottom:50px;
+    h1:nth-child(1) {
+        flex:1;
+        color:white;    
+        font-weight:300;
+        font-size:60px;
+        text-align:center;
+    }
+    h1:nth-child(3) {
+        color:white;
+        text-align:center;
+        margin-top:20px;
+        letter-spacing: 2px;
+        font-size:20px;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        a {
+            display:block;
+            background-repeat: no-repeat;
+            line-height:100px;
+            flex:1;
+            max-height:100px;
+            min-height:100px;
+            max-width:100px;
+            min-width:100px;
+            margin: 30px;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+        }
+        
+        a:nth-child(1) {
+            background-image:url(../assets/facebook.svg);
+            border-radius: 20%;
+        }
+        a:nth-child(2) {
+            background-image:url(../assets/github.svg);
+            border-radius:50%;
+        }
+        a:nth-child(3) {
+            background-image:url(../assets/linkedin.svg);
+            border-radius:10%;
+        }
+    }
+}
 
 footer {
     min-height:400px;
@@ -275,6 +325,7 @@ footer {
             flex:1;
             width:100%;
             text-align:left;
+            font-size:25px;
         }
         
         a {
@@ -284,8 +335,9 @@ footer {
             text-decoration:none;
             color:inherit;
             text-align:left;
-               pointer-events: none;
-   cursor: default;
+            pointer-events: none;
+            cursor: default;
+            word-wrap: break-word;
         }
     }
     .footer-section-bottom {
