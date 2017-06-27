@@ -147,18 +147,19 @@ nav {
   flex-direction: column;
   overflow: auto; }
   .side-nav-tab-container .side-nav-tab {
+    display: block;
+    position: relative;
+    color: black;
+    font-size: 4vh;
+    line-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black;
-    font-size: 4vh;
-    height: 100%;
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-    position: relative; }
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
   .side-nav-tab-container .side-nav-tab:after {
     content: '';
     width: 60%;
@@ -172,7 +173,6 @@ nav {
     text-decoration: none;
     display: block; }
 
-.side-nav-tab-container
 .side-nav-tab:hover {
   background-color: #eeeeee; }
 
@@ -188,252 +188,205 @@ body {
   width: 100%;
   font-family: 'Roboto'; }
 
-/* ===== Section: Intro ===== */
-.intro {
-  height: 100%;
-  background: linear-gradient(rgba(36, 70, 105, 0.74), rgba(36, 70, 105, 0.74)), url("../assets/yosemite-hero.jpg") no-repeat 50% 50%;
-  background-size: cover;
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/* ===== Sections ===== */
+section {
+  min-height: 100vh; }
+  section h1 {
+    margin: 0;
+    padding: 60px;
+    font-weight: 300;
+    font-size: 4em;
+    text-align: center; }
+
+section.flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  .intro .content {
+  flex-direction: column; }
+
+/* ===== Intro ===== */
+#intro {
+  color: #F9F3F4;
+  background: linear-gradient(rgba(36, 70, 105, 0.74), rgba(36, 70, 105, 0.74)), url("../assets/yosemite-hero.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+  #intro div.intro-content {
     flex: 1;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center; }
-    .intro .content h1 {
+    #intro div.intro-content h1 {
       font-weight: 300;
-      color: #F9F3F4;
       font-size: calc(40px + 2vw); }
-    .intro .content .btn {
+    #intro div.intro-content a.intro-btn {
       border-radius: 9px;
       padding: 10px 20px;
-      border: solid 3px white;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white;
-      font-family: 'Oswald'; }
+      border: solid 3px white; }
 
-/* Section: About */
-.about {
-  min-height: 100%;
+/* ===== About ===== */
+#about div.about-content {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 100px; }
-  .about h1 {
+  flex-direction: row;
+  flex-wrap: wrap; }
+  #about div.about-content div.about-img {
     flex: 1;
-    font-weight: 300;
-    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; }
-  .about .content {
-    flex: 7;
+    text-align: center;
+    padding: 30px; }
+    #about div.about-content div.about-img img {
+      height: calc(150px + 6vw);
+      border-radius: 50%; }
+  #about div.about-content .about-text {
+    flex: 2;
+    font-weight: 300;
+    min-width: 300px;
+    color: black;
+    font-size: calc(20px + 0.5vw);
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .about .content .img-container {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 30px; }
-      .about .content .img-container img {
-        height: calc(150px + 6vw);
-        border-radius: 50%; }
-    .about .content .text {
-      font-weight: 300;
-      min-width: 300px;
-      color: black;
-      font-size: calc(20px + 0.5vw);
-      flex: 2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column; }
-      .about .content .text p {
-        margin: 20px;
-        letter-spacing: 2px; }
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; }
+    #about div.about-content .about-text p {
+      margin: 20px;
+      letter-spacing: 2px; }
 
-/* Projects Section*/
-.projects {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 100px;
+/* ===== Projects =====*/
+#projects {
+  color: white;
   background: linear-gradient(rgba(36, 70, 105, 0.74), rgba(36, 70, 105, 0.74)), url("../assets/shanghai.jpg") no-repeat 50% 50%;
   background-size: cover;
   background-attachment: fixed; }
-  .projects h1 {
-    flex: 1;
-    color: white;
-    font-weight: 300;
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-  .projects .project-container {
-    flex: 7;
+  #projects .project-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     padding: 20px; }
-    .projects .project-container .project {
-      flex: 2;
+    #projects .project-container .project {
+      flex: 0 0 calc(270px + 1.5vw);
       height: calc(300px + 2vw);
-      min-width: calc(270px + 1.5vw);
-      max-width: calc(270px + 1.5vw);
-      margin: auto;
-      margin-top: 30px;
-      border-radius: 2dp;
+      margin: 10px;
+      border-radius: 2%;
       display: flex;
       flex-direction: column;
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
       /* Gives material design look */ }
-      .projects .project-container .project .title {
-        height: 200px;
+      #projects .project-container .project h1 {
+        flex: 10;
+        padding: 0;
         font-size: 30px;
-        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center; }
-      .projects .project-container .project .desc {
-        flex: 4;
+      #projects .project-container .project p {
+        flex: 3;
+        color: black;
+        margin: 0;
         padding: 10px;
-        font-family: 'Roboto';
+        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        background-color: white; }
-      .projects .project-container .project .link {
-        background-color: white;
+        text-align: center; }
+      #projects .project-container .project a {
+        flex: 2;
         color: #f57f17;
+        background-color: white;
         text-align: right;
-        padding: 10px 20px;
-        flex: .5; }
-        .projects .project-container .project .link a {
-          text-decoration: none;
-          color: inherit;
-          display: block; }
-    .projects .project-container .one {
+        padding-right: 20px; }
+    #projects .project-container .project:nth-child(1) {
       background-color: #3d5afe; }
-    .projects .project-container .two {
+    #projects .project-container .project:nth-child(2) {
       background-color: #00796b; }
-    .projects .project-container .three {
+    #projects .project-container .project:nth-child(3) {
       background-color: #5e35b1; }
-    .projects .project-container .four {
+    #projects .project-container .project:nth-child(4) {
       background-color: #f44336; }
-    .projects .project-container .five {
+    #projects .project-container .project:nth-child(5) {
       background-color: #6d4c41; }
 
-/* Classes Section*/
-.classes {
-  min-height: 100%;
-  background-color: #ffffff;
+/* ===== Classes ======*/
+#classes p {
+  font-size: 20px;
+  margin-left: 20px; }
+#classes .tile-container {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 100px; }
-  .classes h1 {
-    flex: 1;
-    color: black;
-    font-weight: 300;
-    font-size: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; }
+  #classes .tile-container .tile {
+    flex: 1 0 350px;
+    align-self: stretch;
+    max-width: 100%;
+    min-height: 10rem;
+    margin: 10px;
+    background: white;
+    color: white;
+    font-size: 2.5rem;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center; }
-  .classes P {
-    flex: 1;
-    color: white;
-    font-size: 20px;
-    margin-left: 20px; }
-  .classes .tile-container {
-    display: flex;
-    flex: 10;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch; }
-    .classes .tile-container .tile {
-      flex: 1 0 350px;
-      align-self: stretch;
-      max-width: 100%;
-      min-height: 10rem;
-      margin: 10px;
-      background: white;
-      color: white;
-      font-size: 2.5rem;
-      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
-      .classes .tile-container .tile:nth-child(2n+3) {
-        flex-basis: 300px; }
-      .classes .tile-container .tile:nth-child(4n+5) {
-        flex-basis: 450px; }
-      .classes .tile-container .tile:nth-child(4n + 1) {
-        background-color: #008744; }
-      .classes .tile-container .tile:nth-child(4n + 2) {
-        background-color: #0057e7; }
-      .classes .tile-container .tile:nth-child(4n + 3) {
-        background-color: #d62d20; }
-      .classes .tile-container .tile:nth-child(4n + 4) {
-        background-color: #ffa700; }
-    @media screen and (max-width: 500px) {
-      .classes .tile-container .tile {
-        flex-basis: 100% !important;
-        max-width: 90%; } }
+    #classes .tile-container .tile:nth-child(2n+3) {
+      flex-basis: 300px; }
+    #classes .tile-container .tile:nth-child(4n+5) {
+      flex-basis: 450px; }
+    #classes .tile-container .tile:nth-child(4n + 1) {
+      background-color: #008744; }
+    #classes .tile-container .tile:nth-child(4n + 2) {
+      background-color: #0057e7; }
+    #classes .tile-container .tile:nth-child(4n + 3) {
+      background-color: #d62d20; }
+    #classes .tile-container .tile:nth-child(4n + 4) {
+      background-color: #ffa700; }
+  @media screen and (max-width: 500px) {
+    #classes .tile-container .tile {
+      flex-basis: 100% !important;
+      max-width: 90%; } }
 
-/* Contact Section*/
-.contact {
+/* ===== Contact Section =====*/
+#contact {
   background-color: #009688;
-  padding-top: 20px;
-  padding-bottom: 50px; }
-  .contact h1:nth-child(1) {
-    flex: 1;
-    color: white;
-    font-weight: 300;
-    font-size: 60px;
-    text-align: center; }
-  .contact h1:nth-child(3) {
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    letter-spacing: 2px;
-    font-size: 20px; }
-  .contact .icons {
+  min-height: 50vh;
+  color: white; }
+  #contact .icons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
-    .contact .icons a {
+    #contact .icons a {
       display: block;
       background-repeat: no-repeat;
       line-height: 100px;
       flex: 1;
-      max-height: 100px;
-      min-height: 100px;
+      height: 100px;
       max-width: 100px;
       min-width: 100px;
       margin: 30px;
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
-    .contact .icons a:nth-child(1) {
+    #contact .icons a:nth-child(1) {
       background-image: url(../assets/facebook.svg);
       border-radius: 20%; }
-    .contact .icons a:nth-child(2) {
+    #contact .icons a:nth-child(2) {
       background-image: url(../assets/github.svg);
       border-radius: 50%; }
-    .contact .icons a:nth-child(3) {
+    #contact .icons a:nth-child(3) {
       background-image: url(../assets/linkedin.svg);
       border-radius: 10%; }
+  #contact p {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    letter-spacing: 2px;
+    font-size: 20px; }
 
 footer {
   min-height: 400px;
@@ -462,15 +415,12 @@ footer {
       flex: 1;
       width: 100%;
       display: block;
-      text-decoration: none;
-      color: inherit;
       text-align: left;
       pointer-events: none;
       cursor: default;
       word-wrap: break-word; }
   footer .footer-section-bottom {
     position: absolute;
-    right: 0;
     bottom: 10px;
     display: block;
     width: 100%;
@@ -479,7 +429,5 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center; }
-    footer .footer-section-bottom span {
-      margin: 0px 50px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,15 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="My portfolio">
+    <meta name="description" content="Porfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Mark Toujiline Personal Site</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Mark Toujiline's Personal Website</title>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-
 </head>
 
 <body>
@@ -26,151 +25,150 @@
             </div>
         </div>
         <div class="nav-title">
-        mark toujiline
+            mark toujiline
         </div>
         <div class="nav-links">
             <a href="#intro"> home </a>
             <a href="#about"> about </a>
             <a href="#projects"> projects </a>
             <a href="#classes"> classes </a>
-            <a href="#contact"> contact </a>
-                    
+            <a href="#contact"> contact </a>        
         </div>
         <div class="side-nav side-nav-closed">
             <div class="side-nav-tab-container">
-                <a href="#intro">
-                    <div class="side-nav-tab">
-                        home
-                    </div>
-                </a>
-                <a href="#about">
-                    <div class="side-nav-tab">
-                        about
-                    </div>
-                </a>
-                <a href="#projects">
-                    <div class="side-nav-tab">
-                        projects
-                    </div>
-                </a>
-                <a href="#classes">
-                    <div class="side-nav-tab">
-                        classes
-                    </div>
-                </a>
-                <a href="#contact">
-                    <div class="side-nav-tab">
-                        contact
-                    </div>
-                </a>
+                <a href="#intro" class="side-nav-tab"> home </a>
+                <a href="#about" class="side-nav-tab"> about </a>
+                <a href="#projects" class="side-nav-tab"> projects </a>
+                <a href="#classes" class="side-nav-tab"> classes </a>
+                <a href="#contact" class="side-nav-tab"> contact </a>
             </div>
         </div>
     </nav>
+    
     <a id="intro"></a>
-    <section class="intro">
-        <div class="content">
+    <section id="intro" class="flex">
+        <div class="intro-content">
             <h1> Software Developer </h1>
-            <a class="btn" href="#about"> Learn More </a>
+            <a class="intro-btn" href="#about"> LEARN MORE </a>
         </div>
     </section>
+    
     <a id="about"></a>
-    <section class="about">
+    <section id="about">
         <h1> About me </h1>
-        <div class="content">
-            <div class="img-container">
-                <img src="assets/mark2.jpg">
+        <div class="about-content">
+            <div class="about-img">
+                <img src="assets/mark2.jpg" >
             </div>
-            <div class="text">
+            <div class="about-text">
                 <p>5th year Computer Science student at Cal Poly-SLO.
                 Full-stack developer with emphasis on back-end. Proficient in Java, Javascript (client/server), and C. Have experience with mobile (Android/iOS). </p>
                 <p> I enjoy basketball, hiking, and programming.</p>
             </div>
         </div>
     </section>
+    
     <a id="projects"></a>
-    <section class="projects">
+    <section id="projects">
         <h1> Projects </h1>
         <div class="project-container">
-            <div class="project one">
-                <div class="title">
-                    Personal Website
-                </div>
-                <div class="desc">
+            <div class="project">
+                <h1> Personal Website </h1>
+                <p>
                     Responsive, mobile-first portfolio website using HTML, SCSS, and Javascript
-                </div>
-                <div class="link">
-                    <a href="https://github.com/mtoujiline/mtoujiline.github.io" target="_blank"> SOURCE CODE </a>
-                </div>
+                </p>
+                <a href="https://github.com/mtoujiline/mtoujiline.github.io" target="_blank"> SOURCE CODE </a>
             </div>
-            <div class="project two">
-                <div class="title">
-                    Custom Wiki
-                </div>
-                <div class="desc">
+            <div class="project">
+                <h1> Custom Wiki </h1>
+                <p>
                     MEAN full stack application.
                     (in progress)
-                </div>
-                <div class="link">
-                    <a> SOURCE CODE </a>
-                </div>
+                </p>
+                <a> SOURCE CODE </a>
             </div>
-            <div class="project three">
-                <div class="title">
-                    Javascript Library
-                </div>
-                <div class="desc">
+            <div class="project">
+                <h1> Javascript Library </h1>
+                <p>
                     Javascript Library (in progress)
-                </div>
-                <div class="link">
-                    <a> SOURCE CODE </a>
-                </div>
+                </p>
+                <a> SOURCE CODE </a>
             </div>
-            <div class="project four">
-                <div class="title">
-                    Programming Language
-                </div>
-                <div class="desc">
-                    Programming language (in progress)
-                </div>
-                <div class="link">
-                    <a> SOURCE CODE </a>
-                </div>
+            <div class="project">
+                <h1> Programming Language </h1>
+                <p>
+                    Javascript Library (in progress)
+                </p>
+                <a> SOURCE CODE </a>
             </div>
         </div>
     </section>
-    <a id="classes"></a>
-    <section class="classes">
+    
+    <a id="classes" class="flex"></a>
+    <section id="classes">
         <h1> Classes </h1>
             <div class="tile-container">
-              <div class="tile">CPE437: Dynamic Web Development</div>
-              <div class="tile">CPE365: Intro to Databases</div>
-              <div class="tile">CPE436: Mobile App Development</div>
-              <div class="tile">CPE357: Systems Programming</div>
-              <div class="tile">CPE315: Computer Architecture</div>
-              <div class="tile">CSC445: Theory of Computation</div>
-              <div class="tile">CPE349: Design and Analysis of Algorithms</div>
-              <div class="tile">DATA301: Introduction to Data Science</div>
-              <div class="tile">CPE409: Current Topics in Software Engineering  </div>
-              <div class="tile">DCC: Differential Equations</div>
-              <div class="tile">DCC: Introduction to Linear Algebra</div>
-              <div class="tile">DCC: Introduction to Circuit Analysis</div>
-              <div class="tile">DCC: Digital Circuit Design</div>
-              <div class="tile">DCC: Engineering Dynamics</div>
+                <div class="tile">
+                    CPE437: Dynamic Web Development
+                </div>
+                <div class="tile">
+                    CPE365: Intro to Databases
+                </div>
+                <div class="tile">
+                    CPE436: Mobile App Development
+                </div>
+                <div class="tile">
+                    CPE357: Systems Programming
+                </div>
+                <div class="tile">
+                    CPE315: Computer Architecture
+                </div>
+                <div class="tile">
+                    CSC445: Theory of Computation
+                </div>
+                <div class="tile">
+                    CPE349: Design and Analysis of Algorithms
+                </div>
+                <div class="tile">
+                    DATA301: Introduction to Data Science
+                </div>
+                <div class="tile">
+                    CPE409: Current Topics in Software Engineering 
+                </div>
+                <div class="tile">
+                    DCC: Differential Equations
+                </div>
+                <div class="tile">
+                    DCC: Introduction to Linear Algebra
+                </div>
+                <div class="tile">
+                    DCC: Introduction to Circuit Analysis
+                </div>
+                <div class="tile">
+                    DCC: Digital Circuit Design
+                </div>
+                <div class="tile">
+                    DCC: Engineering Dynamics
+                </div>
             </div>
-                <p> *DCC: class taken at Dutchess Community College </p> 
+            <p> 
+                *DCC: class taken at Dutchess Community College
+            </p> 
     </section>
+    
     <a id="contact"></a>
-    <section class="contact">
+    <section id="contact">
         <h1> Contact</h1>
         <div class="icons">
             <a href="https://www.facebook.com/profile.php?id=100009881310902" target="_blank"></a>
             <a href="https://github.com/mtoujiline" target="_blank"></a>
             <a href="https://www.linkedin.com/in/mark-toujiline-929a49b4/" target="_blank"></a>
         </div>
-        <h1>
+        <p>
             mark.toujiline@gmail.com
-        </h1>
+        </p>
     </section>
+    
     <footer>
         <div class="footer-section">
             <h1>Languages</h1>
@@ -206,13 +204,9 @@
             <a href="#">Portlets</a>
             <a href="#">TCP/IP</a>
         </div>
-       
         <div class="footer-section-bottom">
-            <span>message me at: mark.toujiline@gmail.com</span>
+            message me at: mark.toujiline@gmail.com
         </div>
-    
     </footer>
-
-    </body>
-
+</body>
 </html>

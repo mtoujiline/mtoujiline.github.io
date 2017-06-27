@@ -1,16 +1,16 @@
 (function () {
     'use strict';
 
-    var x = 0,
+    var positionsScrolled = 0,
         toggleMenu = function () {
             $('#nav-icon').toggleClass('open');
             $(".side-nav-closed").toggleClass('side-nav-open');
-            x = 0;
+            positionsScrolled = 0;
         },
         closeMenu = function () {
             $("#nav-icon").removeClass('open');
             $(".side-nav-closed").removeClass('side-nav-open');
-            x = 0;
+            positionsScrolled = 0;
         };
 
 
@@ -31,10 +31,10 @@
 
     /* Remove side menu on scroll */
     $(document).on('scroll', function () {
-        x = x + 1;
+        positionsScrolled = positionsScrolled + 1;
         var height = $(window).scrollTop(),
             bottom = $(window).scrollTop() + $(window).height() === $(document).height();
-        if (x > 30 || height === 0 || bottom) {
+        if (positionsScrolled > 30 || height === 0 || bottom) {
             closeMenu();
         }
     });
