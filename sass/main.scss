@@ -99,10 +99,14 @@ body {
 
 .projects {
     min-height: 100%;
-    background-color: #00C853;
     display:flex;
     flex-direction: column;
     padding-bottom:100px;
+    background: 
+        linear-gradient(rgba(36, 70, 105, 0.74), rgba(36, 70, 105, 0.74)), 
+        url("../assets/shanghai.jpg") no-repeat 50% 50%;
+    background-size:cover;
+    background-attachment: fixed;
     h1 {
         flex:1;
         color:white;    
