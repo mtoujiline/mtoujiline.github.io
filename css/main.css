@@ -324,7 +324,7 @@ section.flex {
   #classes .tile-container .tile {
     flex: 1 0 350px;
     align-self: stretch;
-    max-width: 100%;
+    max-width: 350px;
     min-height: 10rem;
     margin: 10px;
     background: white;
@@ -337,8 +337,6 @@ section.flex {
     text-align: center; }
     #classes .tile-container .tile:nth-child(2n+3) {
       flex-basis: 300px; }
-    #classes .tile-container .tile:nth-child(4n+5) {
-      flex-basis: 450px; }
     #classes .tile-container .tile:nth-child(4n + 1) {
       background-color: #008744; }
     #classes .tile-container .tile:nth-child(4n + 2) {
